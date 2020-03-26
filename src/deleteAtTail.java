@@ -8,7 +8,6 @@ public class deleteAtTail {
         ListNode (int data) {
             this.data = data;
         }
-
     }
 
     public ListNode deletaAtTail(ListNode head) {
