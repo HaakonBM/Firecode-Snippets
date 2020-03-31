@@ -1,3 +1,5 @@
+package Firecode;
+
 public class findMissingNumber {
 
     public static int findMissingNumber (int[] arr) {

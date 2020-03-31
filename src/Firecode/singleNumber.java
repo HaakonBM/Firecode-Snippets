@@ -1,3 +1,5 @@
+package Firecode;
+
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,3 +1,5 @@
+package Firecode;
+
 public class Fibonacci {
 
     public static int fib(int n) {

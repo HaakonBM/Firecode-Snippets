@@ -1,3 +1,5 @@
+package Firecode;
+
 import java.util.HashMap;
 
 public class firstNonRepeatedCharacter {

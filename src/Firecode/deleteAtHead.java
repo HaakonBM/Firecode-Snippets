@@ -1,3 +1,5 @@
+package Firecode;
+
 public class deleteAtHead {
 
     class ListNode {

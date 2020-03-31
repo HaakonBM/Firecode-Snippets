@@ -1,3 +1,5 @@
+package Firecode;
+
 public class flipHorizontalAxis {
 
     public static void flipHorizontalMatrix (int[][] matrix) {
