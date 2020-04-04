@@ -1,4 +1,4 @@
-package HeadFirst;
+package HeadFirst.SimpleDotcom;
 
 public class SimpleDorComTestDrive {
 

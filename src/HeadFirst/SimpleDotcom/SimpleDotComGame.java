@@ -1,6 +1,6 @@
-package HeadFirst;
+package HeadFirst.SimpleDotcom;
 
-import java.util.Random;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SimpleDotComGame {
@@ -30,9 +30,33 @@ public class SimpleDotComGame {
 
         SimpleDotCom game = new SimpleDotCom();
         int startCell = (int) Math.random() *5;
-        int[] locations = {startCell, startCell+1, startCell+2};
-        game.setLocationCells(locations);
 
+        //int[] locations = {startCell, startCell+1, startCell+2};
+        //game.setLocationCells(locations);
+
+        ArrayList<Integer> locations = new ArrayList<>();
+        locations.add(startCell);
+        locations.add(startCell+1);
+        locations.add(startCell+2);
+
+        DotCom newGame = new DotCom();
+        newGame.setLocationCells(locations);
+
+        boolean isAlive = true;
+
+        while(isAlive) {
+            System.out.print("Guess a number: ");
+            String guess = reader.nextLine();
+            String result = newGame.checkYourself(guess);
+            numOfGuesses++;
+            if (result.equals("kill")) {
+                isAlive = false;
+                System.out.println("You took " + numOfGuesses + " guesses");
+            }
+
+        }
+
+        /*
         boolean isAlive = true;
 
         while(isAlive) {
@@ -44,7 +68,9 @@ public class SimpleDotComGame {
                 isAlive = false;
                 System.out.println("You took " + numOfGuesses + " guesses");
             }
+
         }
+        */
 
     }
 
